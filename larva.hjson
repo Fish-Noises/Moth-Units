@@ -8,3 +8,4 @@ flying: true
 itemCapacity: 25
 rotateSpeed: 12
 range: 210
+speed: 2.2
