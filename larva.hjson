@@ -1,0 +1,10 @@
+commandLimit: 8
+health: 600
+armor: 5
+hitSize: 10
+accel: 0.01
+drag: 0.006
+flying: true
+itemCapacity: 25
+rotateSpeed: 12
+range: 210
