@@ -35,7 +35,7 @@ const loadFile = (prev, array) => {
 const script = [
   {
     name: "units",
-    childs: ["larva", "hawk", "luna", "atlas", "death-head"]
+    childs: ["larva"]
   },
   {
     name: "loader",
