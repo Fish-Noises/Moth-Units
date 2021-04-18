@@ -12,7 +12,7 @@ const reconAdd = (recon, planArray) => {
   });
 };
 
-const cunit = name => Vars.content.getByName(ContentType.unit, "moth-units" + name);
+const cunit = name => Vars.content.getByName(ContentType.unit, "moth-units-" + name);
 
 //Factories
 //Ground
