@@ -60,7 +60,7 @@ for(var i = 0; i < loadedScript.res.length; i++){
 if(!Vars.headless){
   Core.app.post(() => {
     const meta = Vars.mods.locateMod("moth-units").meta;
-    meta.displayName = "Moth's units"
+    meta.displayName = "Moth's units";
     meta.author = "Fish-Noises, mostly pirated from missing-category-units";
     meta.description = "No";
   });
