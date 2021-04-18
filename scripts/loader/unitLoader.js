@@ -19,7 +19,7 @@ const cunit = name => Vars.content.getByName(ContentType.unit, "moth-units" + na
 
 
 //Air
-const needle = new UnitFactory.UnitPlan(
+const larva = new UnitFactory.UnitPlan(
   cunit("larva"),
   60 * 20,
   ItemStack.with(
@@ -30,7 +30,6 @@ const needle = new UnitFactory.UnitPlan(
 addPlan(Blocks.airFactory, larva);
 
 //Naval
-);
 
 //Reconstructors
 //1 -> 2
