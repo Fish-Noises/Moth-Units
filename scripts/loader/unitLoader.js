@@ -24,7 +24,7 @@ const larva = new UnitFactory.UnitPlan(
   60 * 20,
   ItemStack.with(
     Items.silicon, 15,
-    Items.spore-pod, 20
+    Items.copper, 20
   )
 );
 addPlan(Blocks.airFactory, larva);
