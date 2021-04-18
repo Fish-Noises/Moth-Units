@@ -36,10 +36,10 @@ const script = [
   {
     name: "units",
     childs: {
-			{
+			[
 				name: "moth-units",
 				childs: ["larva"]
-			}
+			]
   },
   {
     name: "loader",
