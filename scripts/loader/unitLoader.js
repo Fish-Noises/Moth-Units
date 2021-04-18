@@ -34,33 +34,9 @@ addPlan(Blocks.airFactory, larva);
 
 //Reconstructors
 //1 -> 2
-reconAdd(Blocks.additiveReconstructor, [
-  Seq.with(
-    cunit("larva"),
-    cunit("hawk")
-  )
-]);
 
 //2 -> 3
-reconAdd(Blocks.multiplicativeReconstructor, [
-  Seq.with(
-    cunit("hawk"),
-    cunit("luna")
-  )
-]);
 
 //3 -> 4
-reconAdd(Blocks.exponentialReconstructor, [
-  Seq.with(
-    cunit("hawk"),
-    cunit("atlas")
-  )
-]);
 
 //4 -> 5
-reconAdd(Blocks.tetrativeReconstructor, [
-  Seq.with(
-    cunit("atlas"),
-    cunit("death-head")
-  )
-]);
