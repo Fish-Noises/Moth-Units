@@ -19,14 +19,14 @@ const cunit = name => Vars.content.getByName(ContentType.unit, "moth-units-" + n
 
 
 //Air
-const larva = new UnitFactory.UnitPlan(
+const pupa = new UnitFactory.UnitPlan(
   cunit("pupa"),
   60 * 20,
   ItemStack.with(
     Items.silicon, 15,
     Items.copper, 20)
 );
-addPlan(Blocks.airFactory, larva);
+addPlan(Blocks.airFactory, pupa);
 
 //Naval
 
