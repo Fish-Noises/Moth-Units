@@ -38,7 +38,7 @@ const script = [
     childs: [
 	{
 		name: "moth-units",
-		childs: ["larva"]
+		childs: ["pupa"]
 	}
     ]
   },
