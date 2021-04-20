@@ -20,7 +20,7 @@ const cunit = name => Vars.content.getByName(ContentType.unit, "moth-units-" + n
 
 //Air
 const larva = new UnitFactory.UnitPlan(
-  cunit("larva"),
+  cunit("pupa"),
   60 * 20,
   ItemStack.with(
     Items.silicon, 15,
