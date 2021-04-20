@@ -23,18 +23,8 @@ const pupa = new UnitFactory.UnitPlan(
   cunit("pupa"),
   60 * 20,
   ItemStack.with(
-    Items.silicon, 15,
-    Items.copper, 20)
+    Items.silicon, 20,
+    Items.copper, 10,
+  )
 );
 addPlan(Blocks.airFactory, pupa);
-
-//Naval
-
-//Reconstructors
-//1 -> 2
-
-//2 -> 3
-
-//3 -> 4
-
-//4 -> 5
