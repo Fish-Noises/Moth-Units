@@ -1,0 +1,17 @@
+commandLimit: 8
+health: 300
+armor: 3
+speed: 2
+accel: 0.012
+drag: 0.016
+flying: true
+itemCapacity: 30
+rotateSpeed: 25
+range:
+hitSize: 7
+weapons: [
+  {
+    name:zenith-missiles
+    
+  }
+]
