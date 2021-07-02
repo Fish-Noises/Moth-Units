@@ -11,7 +11,15 @@ range: 140
 hitSize: 7
 weapons: [
   {
-    name:zenith-missiles
-    
+    name:heal-weapon
+    reload: 15
+    x: 5
+    bullet:{
+      type: LaserBoltBulletType
+      speed: 7.5
+      backColor: #bf8af4
+      frontColor: #ffffff
+      lifetime: 30
+    }
   }
 ]
