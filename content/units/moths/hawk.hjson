@@ -14,7 +14,7 @@ weapons: [
     name:hawk-weapon
     reload: 40
     x: 7
-    y: -6
+    y: -7
     alternate: false
     bullet:{
       type: LaserBoltBulletType
@@ -30,7 +30,7 @@ weapons: [
     name:hawk-weapon
     reload: 45
     x: 7
-    y: 5
+    y: 4
     alternate: false
     bullet:{
       type: LaserBoltBulletType
