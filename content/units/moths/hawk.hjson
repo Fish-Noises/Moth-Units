@@ -14,13 +14,29 @@ weapons: [
     name:hawk-weapon
     reload: 30
     x: 5
+    y: -5
     bullet:{
       type: LaserBoltBulletType
       speed: 7.5
       backColor: #bf8af4
       frontColor: #ffffff
       lifetime: 30
-      damage: 100
+      damage: 60
+      collidesGround: false
+    }
+  },
+  {
+    name:hawk-weapon
+    reload: 45
+    x: 5
+    y: 5
+    bullet:{
+      type: LaserBoltBulletType
+      speed: 7.5
+      backColor: #bf8af4
+      frontColor: #ffffff
+      lifetime: 30
+      damage: 60
       collidesGround: false
     }
   }
