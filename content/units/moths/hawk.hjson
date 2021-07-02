@@ -7,7 +7,7 @@ drag: 0.016
 flying: true
 itemCapacity: 30
 rotateSpeed: 25
-range:
+range: 140
 hitSize: 7
 weapons: [
   {
