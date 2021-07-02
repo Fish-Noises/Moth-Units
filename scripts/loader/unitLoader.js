@@ -28,3 +28,10 @@ const pupa = new UnitFactory.UnitPlan(
   )
 );
 addPlan(Blocks.airFactory, pupa);
+
+reconAdd(Blocks.additiveReconstructor, [
+  Seq.with(
+    cunit("pupa"),
+    cunit("hawk")
+  )
+]);
