@@ -24,7 +24,7 @@ const pupa = new UnitFactory.UnitPlan(
   60 * 20,
   ItemStack.with(
     Items.silicon, 20,
-    Items.copper, 10,
+    Items.plastanium, 10,
   )
 );
 addPlan(Blocks.airFactory, pupa);
