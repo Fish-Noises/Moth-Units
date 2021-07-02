@@ -1,9 +1,9 @@
 commandLimit: 8
-health: 300
-armor: 3
+health: 420
+armor: 1
 speed: 2
-accel: 0.012
-drag: 0.016
+accel: 0.1
+drag: 0.01
 flying: true
 itemCapacity: 30
 rotateSpeed: 25
@@ -11,7 +11,7 @@ range: 140
 hitSize: 7
 weapons: [
   {
-    name:heal-weapon
+    name:hawk-weapon
     reload: 15
     x: 5
     bullet:{
@@ -20,6 +20,8 @@ weapons: [
       backColor: #bf8af4
       frontColor: #ffffff
       lifetime: 30
+      damage: 50
+      collidesGround: false
     }
   }
 ]
