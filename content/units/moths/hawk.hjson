@@ -12,9 +12,10 @@ hitSize: 10
 weapons: [
   {
     name:hawk-weapon
-    reload: 30
-    x: 5
-    y: -5
+    reload: 40
+    x: 8
+    y: -8
+    alternate: false
     bullet:{
       type: LaserBoltBulletType
       speed: 7.5
@@ -28,8 +29,9 @@ weapons: [
   {
     name:hawk-weapon
     reload: 45
-    x: 5
-    y: 5
+    x: 8
+    y: 3
+    alternate: false
     bullet:{
       type: LaserBoltBulletType
       speed: 7.5
