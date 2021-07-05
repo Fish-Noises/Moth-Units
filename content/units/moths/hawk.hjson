@@ -1,44 +1,46 @@
 commandLimit: 8
-health: 420
+health: 280
 armor: 1
 speed: 3.6
 accel: 0.1
 drag: 0.01
 flying: true
 itemCapacity: 30
-rotateSpeed: 25
+rotateSpeed: 10
 range: 140
-hitSize: 10
+hitSize: 8
 weapons: [
   {
     name:hawk-weapon
     reload: 40
     x: 7
     y: -7
+    shooty: 1
     alternate: false
     bullet:{
       type: LaserBoltBulletType
       speed: 7.5
-      backColor: #bf8af4
-      frontColor: #ffffff
+      backColor: bf8af4
+      frontColor: ffffff
       lifetime: 30
-      damage: 60
+      damage: 50
       collidesGround: false
     }
   },
   {
     name:hawk-weapon
-    reload: 45
+    reload: 40
     x: 7
     y: 4
+    shooty: 1
     alternate: false
     bullet:{
       type: LaserBoltBulletType
       speed: 7.5
-      backColor: #bf8af4
-      frontColor: #ffffff
+      backColor: bf8af4
+      frontColor: ffffff
       lifetime: 30
-      damage: 60
+      damage: 50
       collidesGround: false
     }
   }
