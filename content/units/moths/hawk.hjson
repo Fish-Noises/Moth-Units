@@ -13,8 +13,8 @@ weapons: [
   {
     name:hawk-weapon
     reload: 40
-    x: 4
-    y: -6
+    x: 5
+    y: -3
     shooty: 1
     alternate: false
     bullet:{
@@ -32,8 +32,8 @@ weapons: [
   {
     name:hawk-weapon
     reload: 40
-    x: 5
-    y: 6
+    x: 6
+    y: 7
     shooty: 1
     alternate: false
     bullet:{
