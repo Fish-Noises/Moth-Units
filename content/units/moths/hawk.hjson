@@ -26,7 +26,7 @@ weapons: [
       damage: 50
       collidesGround: false
       status: sapped
-      statusDuration: 60 * 10
+      statusDuration: 60f * 10
     }
   },
   {
@@ -45,7 +45,7 @@ weapons: [
       damage: 50
       collidesGround: false
       status: sapped
-      statusDuration: 60 * 10
+      statusDuration: 60f * 10
     }
   }
 ]
