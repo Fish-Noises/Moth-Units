@@ -1,0 +1,10 @@
+commandLimit: 8
+health: 550
+armor: 4
+speed: 1.9
+accel: 0.06
+drag: 0.012
+flying: true
+hitsize: 18
+lowAltitude: true
+engineSize: 2.5
