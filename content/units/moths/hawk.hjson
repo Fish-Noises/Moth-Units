@@ -13,7 +13,7 @@ weapons: [
   {
     name:hawk-weapon
     reload: 40
-    x: 7
+    x: 6
     y: -7
     shooty: 1
     alternate: false
@@ -25,13 +25,14 @@ weapons: [
       lifetime: 30
       damage: 50
       collidesGround: false
+      status: sapped
     }
   },
   {
     name:hawk-weapon
     reload: 40
-    x: 7
-    y: 4
+    x: 5
+    y: 3
     shooty: 1
     alternate: false
     bullet:{
@@ -42,6 +43,7 @@ weapons: [
       lifetime: 30
       damage: 50
       collidesGround: false
+      status: sapped
     }
   }
 ]
