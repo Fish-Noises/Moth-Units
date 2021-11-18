@@ -17,6 +17,7 @@ weapons: [
     y: -2
     shooty: 1
     alternate: false
+    shootSound: laserShoot
     bullet:{
       type: LaserBoltBulletType
       speed: 7.5
@@ -36,6 +37,7 @@ weapons: [
     y: 7
     shooty: 1
     alternate: false
+    shootSound: laserShoot
     bullet:{
       type: LaserBoltBulletType
       speed: 7.5
