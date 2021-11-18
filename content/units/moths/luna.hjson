@@ -19,12 +19,13 @@ weapons: [
     bullet:{
       type: SapBulletType
       sapStrength: 0.4
-      length: 120
+      length: 60
       damage: 18
       hitColor: bf8af4
       frontColor: bf8af4
+      backColor: bf8af4
       width: 0.6
-      lifetime: 10
+      lifetime: 30
       knockback: -2.2
     }
   },
@@ -37,12 +38,13 @@ weapons: [
     bullet:{
       type: SapBulletType
       sapStrength: 0.4
-      length: 40
+      length: 70
       damage: 18
       hitColor: bf8af4
       frontColor: bf8af4
+      backColor: bf8af4
       width: 0.6
-      lifetime: 10
+      lifetime: 30
       knockback: -2.2
     }
   },
@@ -55,11 +57,11 @@ weapons: [
     rotate: true
     bullet:{
       type: ArtilleryBulletType
-      knockback: 1
+      knockback: 3
       width: 15
       height: 15
       status: sapped
-      lifetime: 360
+      lifetime: 270
       statusDuration: 240
       splashDamage: 100
       splashDamageRadius: 50
