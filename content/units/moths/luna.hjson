@@ -8,3 +8,58 @@ flying: true
 hitsize: 18
 lowAltitude: true
 engineSize: 2.5
+buildSpeed: 0.9
+weapons: [
+  {
+    name: spiroct-weapon
+    rotate: true
+    shootY: 2
+    reload: 10
+    bullet:{
+      type: SapBulletType
+      sapStrength: 0.4
+      length: 150
+      damage: 18
+      hitColor: bf8af4
+      width: 0.6
+      lifetime: 33
+      knockback: -2.2
+    }
+  },
+  {
+    name: spiroct-weapon
+    shootY: 2
+    rotate: true
+    reload: 14
+    bullet:{
+      type: SapBulletType
+      sapStrength: 0.4
+      length: 150
+      damage: 18
+      hitColor: bf8af4
+      width: 0.6
+      lifetime: 33
+      knockback: -2.2
+    },
+    {
+      name:mount-purple-weapon
+      shootY: 2
+      rotateSpeed: 3
+      reload: 60
+      recoil: 2
+      rotate: true
+      bullet:{
+        type: ArtilleryBulletType
+        knockback: 1
+        width: 10
+        height: 10
+        status:sapped
+        statusDuration: 240
+        splashDamage: 30
+        splashDamageRadius: 50
+        frontColor: bf8af4
+        backColor: 000000
+      }
+    }
+  }
+]
