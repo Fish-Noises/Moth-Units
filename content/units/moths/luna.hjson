@@ -18,9 +18,10 @@ weapons: [
     bullet:{
       type: SapBulletType
       sapStrength: 0.4
-      length: 150
+      length: 120
       damage: 18
       hitColor: bf8af4
+      frontColor: bf8af4
       width: 0.6
       lifetime: 33
       knockback: -2.2
@@ -34,16 +35,17 @@ weapons: [
     bullet:{
       type: SapBulletType
       sapStrength: 0.4
-      length: 150
+      length: 90
       damage: 18
       hitColor: bf8af4
+      frontColor: bf8af4
       width: 0.6
       lifetime: 33
       knockback: -2.2
     }
   },
   {
-    name:small-purple-mount
+    name:mount-purple-weapon
     shootY: 2
     rotateSpeed: 3
     reload: 60
@@ -52,8 +54,8 @@ weapons: [
     bullet:{
       type: ArtilleryBulletType
       knockback: 1
-      width: 10
-      height: 10
+      width: 15
+      height: 15
       status:sapped
       statusDuration: 240
       splashDamage: 30
