@@ -25,6 +25,7 @@ weapons: [
       width: 0.6
       lifetime: 33
       knockback: -2.2
+      shootSound: sap
     }
   },
   {
@@ -42,6 +43,7 @@ weapons: [
       width: 0.6
       lifetime: 33
       knockback: -2.2
+      shootSound: sap
     }
   },
   {
@@ -56,9 +58,10 @@ weapons: [
       knockback: 1
       width: 15
       height: 15
-      status:sapped
+      status: sapped
+      lifetime: 120
       statusDuration: 240
-      splashDamage: 30
+      splashDamage: 100
       splashDamageRadius: 50
       frontColor: bf8af4
       backColor: 000000
