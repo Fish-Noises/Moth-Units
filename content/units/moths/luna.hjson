@@ -24,7 +24,7 @@ weapons: [
       hitColor: bf8af4
       frontColor: bf8af4
       width: 0.6
-      lifetime: 33
+      lifetime: 10
       knockback: -2.2
     }
   },
@@ -42,7 +42,7 @@ weapons: [
       hitColor: bf8af4
       frontColor: bf8af4
       width: 0.6
-      lifetime: 33
+      lifetime: 10
       knockback: -2.2
     }
   },
@@ -59,7 +59,7 @@ weapons: [
       width: 15
       height: 15
       status: sapped
-      lifetime: 120
+      lifetime: 360
       statusDuration: 240
       splashDamage: 100
       splashDamageRadius: 50
