@@ -51,13 +51,12 @@ weapons: [
   {
     name:mount-purple-weapon
     shootY: 2
-    rotateSpeed: 3
     reload: 30
     recoil: 2
     rotate: true
     bullet:{
       type: ArtilleryBulletType
-      knockback: 6
+      knockback: 18
       width: 20
       height: 20
       status: sapped
@@ -65,6 +64,8 @@ weapons: [
       statusDuration: 240
       splashDamage: 150
       splashDamageRadius: 150
+      lightning: 8
+      lightningLength: 16
       frontColor: bf8af4
       smokeEffect: shootBigSmoke2
       backColor: 000000
