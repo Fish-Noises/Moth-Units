@@ -55,10 +55,10 @@ weapons: [
   {
     name: lunar-cannon
     shootY: 2
-    reload: 30
+    reload: 120
     recoil: 2
-    x: 4
-    y: -1
+    x: 5
+    y: -2
     rotate: true
     bullet:{
       type: ArtilleryBulletType
@@ -68,13 +68,17 @@ weapons: [
       status: sapped
       lifetime: 270
       statusDuration: 240
-      splashDamage: 150
-      splashDamageRadius: 150
-      lightning: 8
-      lightningLength: 16
+      splashDamage: 30
+      powerDamageScl: 5
+      splashDamageRadius: 100
+      lightning: 16
+      lightningLength: 2
+      lightningColor: bf8af4
       frontColor: bf8af4
       smokeEffect: shootBigSmoke2
       backColor: 000000
+      trailLength: 30
+      trailColor: 000000
     }
   }
 ]
