@@ -35,3 +35,10 @@ reconAdd(Blocks.additiveReconstructor, [
     cunit("hawk"),
   )
 ]);
+
+reconAdd(Blocks.multiplicativeReconstructor, [
+  Seq.with(
+    cunit("hawk"),
+    cunit("luna"),
+  )
+]);
