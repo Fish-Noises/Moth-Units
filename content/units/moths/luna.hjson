@@ -62,17 +62,17 @@ weapons: [
     rotate: true
     bullet:{
       type: ArtilleryBulletType
-      knockback: 18
+      knockback: 35
       width: 20
       height: 20
       status: sapped
       lifetime: 270
       statusDuration: 240
-      splashDamage: 30
+      splashDamage: 50
       powerDamageScl: 5
-      splashDamageRadius: 100
+      splashDamageRadius: 300
       lightning: 16
-      lightningLength: 2
+      lightningLength: 5
       lightningColor: bf8af4
       frontColor: bf8af4
       smokeEffect: shootBigSmoke2
