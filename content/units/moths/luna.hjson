@@ -14,8 +14,8 @@ weapons: [
     name: lunar-sapper
     rotate: true
     shootY: 2
-    x: 7
-    y: 9
+    x: 9
+    y: 11
     reload: 10
     shootSound: sap
     bullet:{
@@ -34,8 +34,8 @@ weapons: [
   {
     name: lunar-sapper
     shootY: 2
-    x: 5
-    y: 7
+    x: 4
+    y: 8
     rotate: true
     reload: 14
     shootSound: sap
