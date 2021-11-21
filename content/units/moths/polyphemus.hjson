@@ -1,1 +1,19 @@
-
+commandLimit: 8
+health: 5500
+armor: 10
+drag: 0.05
+rotateSpeed: 1.1
+flying: true
+engineOffset: 18
+hitSize: 43
+weapons: [
+  {
+    name: overload-ray
+  },
+  {
+    name: overload-ray
+  },
+  {
+    name: overload-ray
+  }
+]
