@@ -3,13 +3,14 @@ const bullets = require("libs/bullets");
 let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {});
+initialDmg: 5;
 
 const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   x: 9,
   y: 19,
   rotate: true,
   shootSound: Sounds.tractorbeam,
-  shotDelay: 15,
+  reload: 15,
   continuous: true,
   alternate: false,
   shootStatusDuration: 30,
@@ -21,9 +22,8 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
   x: 20,
   y: 16,
   rotate: true,
-  firstShotDelay: 180,
+  reload: 15,
   shootSound: Sounds.tractorbeam,
-  shotDelay: 15,
   continuous: true,
   alternate: false,
   shootStatusDuration: 30,
@@ -35,10 +35,9 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   x: 13,
   y: -1,
   rotate: true,
-  shotDelay: 15,
+  reload: 15,
   shootSound: Sounds.tractorbeam,
   continuous: true,
-  firstShotDelay: 600,
   alternate: false,
   shootStatusDuration: 30,
   shootStatus: StatusEffects.unmoving,
