@@ -8,12 +8,18 @@ engineOffset: 18
 hitSize: 43
 weapons: [
   {
-    name: overload-ray
+    name: overload_ray
+    x: 9
+    y: 12
   },
   {
-    name: overload-ray
+    name: overload_ray
+    x: 13
+    y: 10
   },
   {
-    name: overload-ray
+    name: overload_ray
+    x: 11
+    y: -5
   }
 ]
