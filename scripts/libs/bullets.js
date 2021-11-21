@@ -70,7 +70,7 @@ module.exports = {
       speed: 0.0001,
       damage: selfDamage, // * 12 = dps
       colors: [Color.valueOf("bf8af4"), Color.white],
-      width: 3,
+      width: 1.5,
       maxRange: 160,
       length: selfLength,
       lifetime: selfLifetime,
@@ -80,6 +80,8 @@ module.exports = {
       hittable: false,
       keepVelocity: false,
       pierce: true,
+      status: StatusEffects.sapped,
+      statusDuration: 180,
       hitSize: 0,
       fadeTime: 10,
       growTime: 10,
