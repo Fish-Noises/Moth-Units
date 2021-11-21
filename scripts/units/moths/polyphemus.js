@@ -9,8 +9,8 @@ secondTierDmg: 14;
 let firingDuration = 0;
 
 updateUnit(){
-    MothAirT4.super$updateUnit();
-    switch (MothAirT4.isShooting()){
+    this.super$updateUnit();
+    switch (this.isShooting()){
       case 1:
         firingDuration = firingDuration + 1;
         break;
