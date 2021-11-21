@@ -6,6 +6,7 @@ module.exports = {
         if(other instanceof Healthc){
           let t = other;
           t.damage(this.damage);
+        }
         if(!this.pierce){
           this.remove();
         }else{
