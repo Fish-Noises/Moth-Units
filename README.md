@@ -12,5 +12,5 @@ Powerful single-target tier 4. Fires a large single-target laser that increases 
 <h2>Atlas</h2>
 Attacks by firing long-range siege missiles. Can electrify itself automatically to ward off nearby enemies.
 <h1>Credit</h1>
-Fish-Noises - Main author
+Fish-Noises - Main author<br>
 Antlrr - Collaborator
