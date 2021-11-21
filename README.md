@@ -1,19 +1,16 @@
 # Moth-Units
-Do not. <br>
-<h1>Tier 1 - PUPA</h1>
-Pupae are small air units that carry a force projector shield and heavy armor, designed to sustain heavy damage as a meatshield.
-
-<h1>Tier 2 - HAWK</h1>
-Hawks fly around and fire sapping laser bolts which destroy air enemies. Highly effective against armored units. 
-
-<h1>Tier 3 - LUNA</h1>
-Lunas are concealed infiltrators which attack like a miniature Arkyid, spitting anti-ground shells and anti-air sapping lasers. They can also reveal themselves and spew disabling juice onto enemy buildings to stop their activity for one minute.
-
-<h1>Tier 4 - POLYPHEMUS</h1>
-Polyphemus attacks enemies and blocks using a set of two anti-armor lasers that increase in damage over time. They can also spew a mass of flak at close range.
-
-<h1>Tier 5 - ATLAS</h1>
-Atlas conceals all allies around it and attacks by firing long-range EMP missiles. They have a set of eight micro-scorches for self-defense.
-
-Credit:
-*Inspired* by MEEPofFaith/missing-category-units
+Mothdustry - A mod for moths.
+<h1>Units</h1>
+<h2>Pupa</h2>
+Dormant tier 1 unit that cannot attack. Wields a giant force shield and high armor
+<h2>Hawk</h2>
+Speedy tier 2 anti-air unit. Very strong against other ships
+<h2>Luna</h2>
+Tier 3 aerial siege unit. Saps nearby units and fires long-range EMP projectiles
+<h2>Polyphemus</h2>
+Powerful single-target tier 4. Fires a large single-target laser that increases in damage over time.
+<h2>Atlas</h2>
+Attacks by firing long-range siege missiles. Can electrify itself automatically to ward off nearby enemies.
+<h1>Credit</h1>
+Fish-Noises - Main author
+Antlrr - Collaborator
