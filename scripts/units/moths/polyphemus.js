@@ -8,7 +8,8 @@ firstTierDmg: 8;
 secondTierDmg: 14;
 
 const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
-  update(){
+  updateWeapons(){
+    this.super$updateWeapons()
     switch (this.isShooting()){
       case 1:
         firingDuration = firingDuration + 1;
@@ -31,7 +32,8 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
 });
 
 const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
-  update(){
+  updateWeapons(){
+    this.super$updateWeapons()
     switch (this.isShooting()){
       case 1:
         firingDuration = firingDuration + 1;
@@ -54,7 +56,8 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
 });
 
 const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
-  update(){
+  updateWeapons(){
+    this.super$updateWeapons()
     switch (this.isShooting()){
       case 1:
         firingDuration = firingDuration + 1;
