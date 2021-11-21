@@ -1,5 +1,5 @@
 module.exports = {
-  newPrismBeam(selfDamage){
+  newPrismBeam(selfDamage,selfLength,selfLifetime){
     let prismBeam = extend(BulletType, {
       collision(other, x, y){
         this.hit(this.base(), x, y);
@@ -73,6 +73,8 @@ module.exports = {
       length: 160,
       width: 1,
       maxRange: 160,
+      length: selfLength,
+      lifetime: selfLifetime,
       absorbable: false,
       collidesTiles: true,
       collidesGround: true,
