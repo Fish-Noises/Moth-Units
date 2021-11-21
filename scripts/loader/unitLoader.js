@@ -32,14 +32,14 @@ addPlan(Blocks.airFactory, pupa);
 reconAdd(Blocks.additiveReconstructor, [
   Seq.with(
     cunit("pupa"),
-    cunit("hawk"),
+    cunit("hawk")
   )
 ]);
 
 reconAdd(Blocks.multiplicativeReconstructor, [
   Seq.with(
     cunit("hawk"),
-    cunit("luna"),
+    cunit("luna")
   )
 ]);
 
@@ -47,6 +47,6 @@ reconAdd(Blocks.multiplicativeReconstructor, [
 reconAdd(Blocks.exponentialReconstructor, [
   Seq.with(
     cunit("luna"),
-    cunit("polyphemus"),
+    cunit("polyphemus")
   )
 ]);
