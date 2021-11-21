@@ -70,7 +70,7 @@ module.exports = {
       speed: 0.0001,
       damage: selfDamage, // * 12 = dps
       colors: [Color.valueOf("bf8af4"), Color.white],
-      width: 1,
+      width: 3,
       maxRange: 160,
       length: selfLength,
       lifetime: selfLifetime,
