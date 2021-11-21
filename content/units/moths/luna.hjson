@@ -70,11 +70,12 @@ weapons: [
       status: sapped
       lifetime: 90
       statusDuration: 240
-      splashDamage: 50
+      splashDamage: 110
       powerDamageScl: 10
       splashDamageRadius: 300
       lightning: 16
       lightningLength: 5
+      lightningDamage: 30
       speed: 4
       lightningColor: bf8af4
       frontColor: 000000
@@ -85,8 +86,9 @@ weapons: [
       hitEffect:{
         type: ExplosionEffect
         waveStroke: 6
-        waveLife: 10
+        waveLife: 40
         waveRad: 100
+        waveRadBase: 15
         sparks: 16
         sparkColour: bf8af4
         sparkLen: 3
