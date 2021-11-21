@@ -21,3 +21,5 @@ const polyphemusRay3 = extend(Weapon, "overload-ray", {
   y: -1,
   rotate: true
 });
+
+MotnAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3)
