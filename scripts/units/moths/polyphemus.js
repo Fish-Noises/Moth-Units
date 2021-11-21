@@ -8,6 +8,7 @@ initialDmg: 5;
 const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   x: 9,
   y: 19,
+  shootY: 11,
   rotate: true,
   shootSound: Sounds.tractorbeam,
   reload: 15,
@@ -23,6 +24,7 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
   y: 16,
   rotate: true,
   reload: 15,
+  shootY: 11,
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
@@ -36,6 +38,7 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   y: -1,
   rotate: true,
   reload: 15,
+  shootY: 17,
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
