@@ -4,8 +4,20 @@ let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {});
 initialDmg: 5;
+firstTierDmg: 8;
+secondTierDmg: 14;
 
 const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
+  update(){
+    this.super$update();
+    switch (this.isShooting()){
+      case 1:
+        firingDuration = firingDuration + 1;
+        break;
+      case 0:
+        firingDuration = 0;
+    } 
+  },
   x: 9,
   y: 17,
   shootY: 11,
@@ -20,6 +32,16 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
 });
 
 const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
+  update(){
+    this.super$update();
+    switch (this.isShooting()){
+      case 1:
+        firingDuration = firingDuration + 1;
+        break;
+      case 0:
+        firingDuration = 0;
+    } 
+  },
   x: 20,
   y: 14,
   rotate: true,
@@ -34,6 +56,16 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
 });
 
 const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
+  update(){
+    this.super$update();
+    switch (this.isShooting()){
+      case 1:
+        firingDuration = firingDuration + 1;
+        break;
+      case 0:
+        firingDuration = 0;
+    } 
+  },
   x: 13,
   y: -3,
   rotate: true,
