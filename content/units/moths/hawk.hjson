@@ -10,6 +10,8 @@ rotateSpeed: 10
 range: 140
 hitSize: 8
 lowAltitude: true
+engineOffset: 1.25
+controller: FlyingAI
 weapons: [
   {
     name:hawk-weapon
