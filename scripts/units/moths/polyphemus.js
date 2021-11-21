@@ -12,7 +12,7 @@ updateUnit(){
     MothAirT4.super$updateUnit();
     switch (MothAirT4.isShooting()){
       case 1:
-        MothAirT4.firingDuration = thMothAirT4is.firingDuration + 1;
+        MothAirT4.firingDuration = MothAirT4.firingDuration + 1;
         break;
       case 0:
         MothAirT4.firingDuration = 0;
