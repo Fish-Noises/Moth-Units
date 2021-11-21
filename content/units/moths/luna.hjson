@@ -75,7 +75,7 @@ weapons: [
       splashDamageRadius: 300
       lightning: 16
       lightningLength: 5
-      lightningDamage: 30
+      lightningDamage: 15
       speed: 4
       lightningColor: bf8af4
       frontColor: 000000
