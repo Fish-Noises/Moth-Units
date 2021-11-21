@@ -12,7 +12,7 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   reload: 15,
   continuous: true,
   alternate: false,
-  bullet: bullets.newPrismBeam(25,100,120)
+  bullet: bullets.newPrismBeam(25,210,120)
 });
 
 const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
@@ -24,7 +24,7 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
   reload: 15,
   continuous: true,
   alternate: false,
-  bullet: bullets.newPrismBeam(50,100,120)
+  bullet: bullets.newPrismBeam(50,210,120)
 });
 
 const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
@@ -36,7 +36,7 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   continuous: true,
   firstShotDelay: 600,
   alternate: false,
-  bullet: bullets.newPrismBeam(125,100,120)
+  bullet: bullets.newPrismBeam(125,210,120)
 });
 
 MothAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3);
