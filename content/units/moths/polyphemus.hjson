@@ -4,22 +4,23 @@ armor: 10
 drag: 0.05
 rotateSpeed: 1.1
 flying: true
-engineOffset: 18
+engineOffset: 14
+engineSize: 5.6
 hitSize: 43
 weapons: [
   {
     name: overload_ray
     x: 9
-    y: 12
+    y: 15
+  },
+  {
+    name: overload_ray
+    x: 17
+    y: 14
   },
   {
     name: overload_ray
     x: 13
-    y: 10
-  },
-  {
-    name: overload_ray
-    x: 11
-    y: -5
+    y: -3
   }
 ]
