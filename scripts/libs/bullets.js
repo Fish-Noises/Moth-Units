@@ -1,5 +1,5 @@
 module.exports = {
-  newPrismBeam(selfDamage,selfShotDelay){
+  newPrismBeam(selfDamage){
     let prismBeam = extend(BulletType, {
       collision(other, x, y){
         this.hit(this.base(), x, y);
@@ -68,7 +68,6 @@ module.exports = {
 
       speed: 0.0001,
       damage: selfDamage, // * 12 = dps
-      shotDelat: selfShotDelay,
       colors: [Color.valueOf("bf8af4"), Color.white],
       length: 160,
       width: 1,
