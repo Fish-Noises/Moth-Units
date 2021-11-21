@@ -23,7 +23,7 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   x: 13,
   y: -1,
   rotate: true,
-  shotDelay: 180,
+  shotDelay: 600,
   bullet: bullets.newPrismBeam(42)
 });
 
