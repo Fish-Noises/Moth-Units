@@ -22,4 +22,4 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   rotate: true
 });
 
-MotnAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3);
+MothAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3);
