@@ -6,16 +6,16 @@ MothAirT4.constructor = () => extend(UnitEntity, {});
 initialDmg: 5;
 firstTierDmg: 8;
 secondTierDmg: 14;
-firingDuration: 0;
+MothAirT4.firingDuration: 0;
 
 updateUnit(){
-    this.super$updateUnit();
-    switch (this.isShooting()){
+    MothAirT4.super$updateUnit();
+    switch (MothAirT4.isShooting()){
       case 1:
-        this.firingDuration = this.firingDuration + 1;
+        MothAirT4.firingDuration = thMothAirT4is.firingDuration + 1;
         break;
       case 0:
-        this.firingDuration = 0;
+        MothAirT4.firingDuration = 0;
     } 
 }
 
