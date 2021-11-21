@@ -13,7 +13,7 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   continuous: true,
   alternate: false,
   shootStatusDuration: 30,
-  shootStatus: unmoving,
+  shootStatus: StatusEffects.unmoving,
   bullet: bullets.newPrismBeam(25,210,15)
 });
 
