@@ -9,6 +9,7 @@ itemCapacity: 30
 rotateSpeed: 10
 range: 140
 hitSize: 8
+lowAltitude: true
 weapons: [
   {
     name:hawk-weapon
@@ -32,7 +33,7 @@ weapons: [
   },
   {
     name:hawk-weapon
-    reload: 40
+    reload: 60
     x: 6
     y: 7
     shooty: 1
