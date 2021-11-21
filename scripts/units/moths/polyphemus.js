@@ -12,10 +12,10 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
     this.super$updateWeapons()
     switch (this.isShooting()){
       case 1:
-        firingDuration = firingDuration + 1;
+        this.firingDuration = this.firingDuration + 1;
         break;
       case 0:
-        firingDuration = 0;
+        this.firingDuration = 0;
     } 
   },
   x: 9,
@@ -28,7 +28,7 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(firingDuration,210,600)
+  bullet: bullets.newPrismBeam(this.firingDuration,210,600)
 });
 
 const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
@@ -36,10 +36,10 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
     this.super$updateWeapons()
     switch (this.isShooting()){
       case 1:
-        firingDuration = firingDuration + 1;
+        this.firingDuration = this.firingDuration + 1;
         break;
       case 0:
-        firingDuration = 0;
+        this.firingDuration = 0;
     } 
   },
   x: 20,
@@ -52,7 +52,7 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(firingDuration,210,600)
+  bullet: bullets.newPrismBeam(this.firingDuration,210,600)
 });
 
 const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
@@ -60,10 +60,10 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
     this.super$updateWeapons()
     switch (this.isShooting()){
       case 1:
-        firingDuration = firingDuration + 1;
+        this.firingDuration = this.firingDuration + 1;
         break;
       case 0:
-        firingDuration = 0;
+        this.firingDuration = 0;
     } 
   },
   x: 13,
@@ -76,7 +76,7 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(firingDuration,210,600)
+  bullet: bullets.newPrismBeam(this.firingDuration,210,600)
 });
 
 MothAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3);
