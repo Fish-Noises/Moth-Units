@@ -66,6 +66,7 @@ weapons: [
       knockback: 35
       width: 20
       height: 20
+      hitSound: plasmaboom
       status: sapped
       lifetime: 90
       statusDuration: 240
@@ -74,13 +75,22 @@ weapons: [
       splashDamageRadius: 300
       lightning: 16
       lightningLength: 5
-      speed: 11
+      speed: 4
       lightningColor: bf8af4
       frontColor: 000000
       smokeEffect: shootBigSmoke2
       backColor: bf8af4
       trailLength: 30
       trailColor: bf8af4
+      hitEffect:{
+        type: ExplosionEffect
+        waveStroke: 6
+        waveLife: 10
+        waveRad: 100
+        sparks: 16
+        sparkColour: bf8af4
+        sparkLen: 3
+      }
     }
   }
 ]
