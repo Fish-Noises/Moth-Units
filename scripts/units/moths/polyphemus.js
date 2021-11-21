@@ -1,7 +1,7 @@
 const bullets = require("libs/bullets");
 
 let col = Color.valueOf("#bf8af4");
-const MothAirT4 = extend(UnitType, "pupa",{});
+const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {});
 
 const polyphemusRay1 = extend(Weapon, "overload-ray", {
