@@ -22,7 +22,7 @@ weapons: [
       type: SapBulletType
       sapStrength: 0.4
       length: 60
-      damage: 9
+      damage: 21
       hitColor: bf8af4
       frontColor: bf8af4
       backColor: bf8af4
@@ -43,7 +43,7 @@ weapons: [
       type: SapBulletType
       sapStrength: 0.4
       length: 70
-      damage: 9
+      damage: 21
       hitColor: bf8af4
       frontColor: bf8af4
       backColor: bf8af4
@@ -60,25 +60,27 @@ weapons: [
     x: 5
     y: -2
     rotate: true
+    shootSound: artillery
     bullet:{
-      type: ArtilleryBulletType
+      type: EmpBulletType
       knockback: 35
       width: 20
       height: 20
       status: sapped
-      lifetime: 270
+      lifetime: 90
       statusDuration: 240
       splashDamage: 50
       powerDamageScl: 10
       splashDamageRadius: 300
       lightning: 16
       lightningLength: 5
+      speed: 11
       lightningColor: bf8af4
-      frontColor: bf8af4
+      frontColor: 000000
       smokeEffect: shootBigSmoke2
       backColor: bf8af4
       trailLength: 30
-      trailColor: 000000
+      trailColor: bf8af4
     }
   }
 ]
