@@ -42,3 +42,11 @@ reconAdd(Blocks.multiplicativeReconstructor, [
     cunit("luna"),
   )
 ]);
+
+
+reconAdd(Blocks.exponentialReconstructor, [
+  Seq.with(
+    cunit("luna"),
+    cunit("polyphemus"),
+  )
+]);
