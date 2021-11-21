@@ -7,20 +7,3 @@ flying: true
 engineOffset: 14
 engineSize: 5.6
 hitSize: 43
-weapons: [
-  {
-    name: overload_ray
-    x: 9
-    y: 19
-  },
-  {
-    name: overload_ray
-    x: 20
-    y: 16
-  },
-  {
-    name: overload_ray
-    x: 13
-    y: -1
-  }
-]
