@@ -1,4 +1,4 @@
-//const bullets = require("libs/bullets");
+const bullets = require("libs/bullets");
 
 let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
