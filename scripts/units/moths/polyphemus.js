@@ -3,9 +3,10 @@ const bullets = require("libs/bullets");
 let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {});
-initialDmg: 5;
-firstTierDmg: 8;
-secondTierDmg: 14;
+/*
+let initialDmg: 5;
+let firstTierDmg: 8;
+let secondTierDmg: 14;
 let firingDuration = 0;
 
 updateUnit(){
@@ -17,7 +18,7 @@ updateUnit(){
       case 0:
         firingDuration = 0;
     } 
-}
+}*/
 
 const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   x: 9,
@@ -30,7 +31,7 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(firingDuration,210,600)
+  bullet: bullets.newPrismBeam(10,210,600)
 });
 
 const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
@@ -44,7 +45,7 @@ const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(firingDuration,210,600)
+  bullet: bullets.newPrismBeam(10,210,600)
 });
 
 const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
@@ -58,7 +59,7 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(firingDuration,210,600)
+  bullet: bullets.newPrismBeam(10,210,600)
 });
 
 MothAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3);
