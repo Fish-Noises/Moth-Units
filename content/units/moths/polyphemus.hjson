@@ -7,3 +7,5 @@ flying: true
 engineOffset: 14
 engineSize: 5.6
 hitSize: 43
+shootStatusDuration: 30
+shootStatus: unmoving
