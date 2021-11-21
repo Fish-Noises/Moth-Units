@@ -11,16 +11,16 @@ weapons: [
   {
     name: overload_ray
     x: 9
-    y: 15
+    y: 19
   },
   {
     name: overload_ray
-    x: 17
-    y: 14
+    x: 20
+    y: 17
   },
   {
     name: overload_ray
     x: 13
-    y: -3
+    y: 1
   }
 ]
