@@ -8,5 +8,3 @@ engineOffset: 14
 engineSize: 5.6
 buildSpeed: 1
 hitSize: 43
-shootStatusDuration: 30
-shootStatus: unmoving
