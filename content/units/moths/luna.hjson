@@ -69,14 +69,14 @@ weapons: [
       lifetime: 270
       statusDuration: 240
       splashDamage: 50
-      powerDamageScl: 5
+      powerDamageScl: 10
       splashDamageRadius: 300
       lightning: 16
       lightningLength: 5
       lightningColor: bf8af4
       frontColor: bf8af4
       smokeEffect: shootBigSmoke2
-      backColor: 000000
+      backColor: bf8af4
       trailLength: 30
       trailColor: 000000
     }
