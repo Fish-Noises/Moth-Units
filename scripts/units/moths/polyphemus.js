@@ -11,28 +11,26 @@ const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
   shootY: 11,
   rotate: true,
   shootSound: Sounds.tractorbeam,
-  shotDelay: 5,
-  reload: 1,
+  reload: 120,
   continuous: true,
   alternate: false,
-  shootStatusDuration: 15,
+  shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(10,210,5)
+  bullet: bullets.newPrismBeam(10,210,600)
 });
 
 const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
   x: 20,
   y: 14,
   rotate: true,
-  shotDelay: 5,
-  reload: 1,
+  reload: 120,
   shootY: 11,
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
-  shootStatusDuration: 30,
+  shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(15,210,5)
+  bullet: bullets.newPrismBeam(15,210,600)
 });
 
 const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
@@ -40,14 +38,13 @@ const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
   y: -3,
   rotate: true,
   shotDelay: 5,
-  reload: 1,
-  shootY: 17,
+  reload: 600,
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
-  shootStatusDuration: 30,
+  shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(30,210,5)
+  bullet: bullets.newPrismBeam(30,210,600)
 });
 
 MothAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3);
