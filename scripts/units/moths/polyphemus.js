@@ -20,46 +20,53 @@ updateUnit(){
     } 
 }*/
 
-const polyphemusRay1 = extend(Weapon, "moth-units-overload_ray", {
+const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   x: 9,
   y: 17,
-  shootY: 11,
   rotate: true,
+  reload: 10,
+  shootY: 11,
   shootSound: Sounds.tractorbeam,
-  reload: 120,
-  continuous: true,
-  alternate: false,
-  shootStatusDuration: 600,
-  shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(10,210,600)
+  bullet: {
+    hitSize: 10,
+    pierce: false,
+    lifetime: 16,
+    shootEffect: Fx.shootSmallFlame,
+    hitEffect: Fx.hitFlameSmall,
+    damage: 20
+  }
 });
 
-const polyphemusRay2 = extend(Weapon, "moth-units-overload_ray", {
+const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   x: 20,
   y: 14,
   rotate: true,
-  reload: 120,
+  reload: 10,
   shootY: 11,
   shootSound: Sounds.tractorbeam,
-  continuous: true,
-  alternate: false,
-  shootStatusDuration: 600,
-  shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(10,210,600)
+  bullet: {
+    hitSize: 10,
+    pierce: false,
+    lifetime: 16,
+    shootEffect: Fx.shootSmallFlame,
+    hitEffect: Fx.hitFlameSmall,
+    damage: 20
+  }
 });
 
-const polyphemusRay3 = extend(Weapon, "moth-units-overload_ray", {
+const overloadRay = extend(Weapon, "moth-units-overload-ray", {
+  top: true,
   x: 13,
   y: -3,
+  shooty: 5,
   rotate: true,
-  shotDelay: 5,
   reload: 600,
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(10,210,600)
+  bullet: bullets.newPrismBeam(30,210,600)
 });
 
-MothAirT4.weapons.addAll(polyphemusRay1,polyphemusRay2,polyphemusRay3);
+MothAirT4.weapons.addAll(cinderCannon1,cinderCannon2,overloadRay);
