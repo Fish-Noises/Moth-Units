@@ -67,8 +67,8 @@ weapons: [
       shrinkX: 0
       shrinkY: 0
       knockback: 35
-      width: 14
-      height: 14
+      width: 10
+      height: 10
       hitSound: plasmaboom
       status: sapped
       lifetime: 90
@@ -84,7 +84,8 @@ weapons: [
       frontColor: 000000
       smokeEffect: shootBigSmoke2
       backColor: bf8af4
-      trailLength: 30
+      trailLength: 12
+      trailWidth: 4
       trailColor: bf8af4
       hitEffect:{
         type: ExplosionEffect
