@@ -20,21 +20,20 @@ updateUnit(){
     } 
 }*/
 
+
 const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   x: 9,
   y: 17,
   rotate: true,
   reload: 10,
-  shootY: 11,
-  shootSound: Sounds.tractorbeam,
-  bullet: {
-    hitSize: 10,
-    pierce: false,
-    lifetime: 16,
-    shootEffect: Fx.shootSmallFlame,
-    hitEffect: Fx.hitFlameSmall,
-    damage: 20
-  }
+  shootY: 5,
+  hitSize: 10,
+  pierce: false,
+  lifetime: 16,
+  shootEffect: Fx.shootSmallFlame,
+  hitEffect: Fx.hitFlameSmall,
+  damage: 20,
+  bullet: BulletType(4.1,35)
 });
 
 const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
@@ -42,16 +41,14 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   y: 14,
   rotate: true,
   reload: 10,
-  shootY: 11,
-  shootSound: Sounds.tractorbeam,
-  bullet: {
-    hitSize: 10,
-    pierce: false,
-    lifetime: 16,
-    shootEffect: Fx.shootSmallFlame,
-    hitEffect: Fx.hitFlameSmall,
-    damage: 20
-  }
+  shootY: 5,
+  hitSize: 10,
+  pierce: false,
+  lifetime: 16,
+  shootEffect: Fx.shootSmallFlame,
+  hitEffect: Fx.hitFlameSmall,
+  damage: 20,
+  bullet: BulletType(4.1,35)
 });
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
