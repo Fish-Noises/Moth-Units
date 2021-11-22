@@ -116,6 +116,7 @@ weapons: [
           colorTo: bf8af450
           sizeFrom: 8
           sizeTo: 0
+            }
           ]
         }
       }
