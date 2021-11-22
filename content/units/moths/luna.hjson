@@ -32,7 +32,7 @@ weapons: [
       lifetime: 30
       knockback: -2.2
     }
-  },
+  }
   {
     name: lunar-sapper
     shootY: 2
@@ -53,7 +53,7 @@ weapons: [
       lifetime: 30
       knockback: -2.2
     }
-  },
+  }
   {
     name: lunar-cannon
     shootY: 2
@@ -116,9 +116,8 @@ weapons: [
           colorTo: bf8af450
           sizeFrom: 8
           sizeTo: 0
-            }
-          ]
-        }
+          }
+        ]
       }
     }
   }
