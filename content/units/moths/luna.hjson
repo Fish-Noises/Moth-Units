@@ -63,6 +63,7 @@ weapons: [
     shootSound: artillery
     bullet:{
       type: EmpBulletType
+      sprite: circle-bullet
       knockback: 35
       width: 20
       height: 20
