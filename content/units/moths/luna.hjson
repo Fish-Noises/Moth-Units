@@ -10,7 +10,7 @@ lowAltitude: true
 engineSize: 2.5
 buildSpeed: 0.9
 engineOffset: 6.50
-engineSize: 2.50
+engineSize: 3
 weapons: [
   {
     name: lunar-sapper
@@ -99,11 +99,25 @@ weapons: [
          sizeTo: 0
       }
       hitEffect:{
-        type: ExplosionEffect
-        waveStroke: 2
-        waveLife: 120
-        waveRad: 300
-        waveColor: bf8af4
+        type: MultiEffect
+        effects: [
+          {
+          type: ExplosionEffect
+          waveStroke: 2
+          waveLife: 120
+          waveRad: 300
+          waveColor: bf8af4
+          }
+          {
+          type: ParticleEffect
+          particles: 8
+          interp: pow10Out
+          colorFrom: bf8af450
+          colorTo: bf8af450
+          sizeFrom: 8
+          sizeTo: 0
+          ]
+        }
       }
     }
   }
