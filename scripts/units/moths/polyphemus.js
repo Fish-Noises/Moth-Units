@@ -30,8 +30,8 @@ const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   hitSize: 10,
   pierce: false,
   lifetime: 16,
-  shootEffect: Fx.shootSmallFlame,
-  hitEffect: Fx.hitFlameSmall,
+  shootEffect:shootSmallFlame,
+  hitEffect: hitFlameSmall,
   damage: 20,
   bullet: BulletType(4.1,35)
 });
@@ -45,8 +45,8 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   hitSize: 10,
   pierce: false,
   lifetime: 16,
-  shootEffect: Fx.shootSmallFlame,
-  hitEffect: Fx.hitFlameSmall,
+  shootEffect: shootSmallFlame,
+  hitEffect: hitFlameSmall,
   damage: 20,
   bullet: BulletType(4.1,35)
 });
