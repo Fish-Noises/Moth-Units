@@ -26,8 +26,7 @@ weapons: [
       length: 60
       damage: 21
       hitColor: bf8af4
-      frontColor: bf8af4
-      backColor: bf8af4
+      color: bf8af4
       width: 0.6
       lifetime: 30
       knockback: -2.2
@@ -47,8 +46,7 @@ weapons: [
       length: 70
       damage: 21
       hitColor: bf8af4
-      frontColor: bf8af4
-      backColor: bf8af4
+      color: bf8af4
       width: 0.6
       lifetime: 30
       knockback: -2.2
