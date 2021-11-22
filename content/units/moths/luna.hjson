@@ -87,7 +87,7 @@ weapons: [
       trailLength: 0
       trailWidth: 0
       trailColor: bf8af4
-      trailChance: 10
+      trailChance: 5
       trailEffect: {
          type: ParticleEffect
          particles: 3
@@ -98,7 +98,7 @@ weapons: [
       }
       hitEffect:{
         type: ExplosionEffect
-        waveStroke: 6
+        waveStroke: 2
         waveLife: 120
         waveRad: 300
         waveColor: bf8af4
