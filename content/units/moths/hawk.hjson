@@ -10,7 +10,7 @@ rotateSpeed: 10
 range: 140
 hitSize: 8
 lowAltitude: true
-engineOffset: 12
+engineOffset: 7
 controller: FlyingAI
 weapons: [
   {
