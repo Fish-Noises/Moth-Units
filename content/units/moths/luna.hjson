@@ -114,8 +114,9 @@ weapons: [
           interp: pow10Out
           colorFrom: bf8af450
           colorTo: bf8af450
-          sizeFrom: 8
+          sizeFrom: 14
           sizeTo: 0
+          length: 120
           }
         ]
       }
