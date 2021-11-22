@@ -87,14 +87,13 @@ weapons: [
       trailLength: 0
       trailWidth: 0
       trailColor: bf8af4
-      trailChance: 0.1
+      trailChance: 10
       trailEffect: {
          type: ParticleEffect
          particles: 3
          colorFrom: bf8af4
          colorTo: bf8af401
-         interp: reverse
-         sizeFrom: 1
+         sizeFrom: 3
          sizeTo: 0
       }
       hitEffect:{
