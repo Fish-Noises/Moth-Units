@@ -20,18 +20,18 @@ updateUnit(){
     } 
 }*/
 const flameSpew = extend(BulletType, {
-    speed: 3,
-    damage: 25,
+    speed: 8,
+    damage: 40,
     hitSize: 11,
     lifetime: 13,
     pierce: true,
     status: StatusEffects.burning,
     statusDuration: 120,
-    shootEffect: Fx.shootSmallFlame,
-    hitEffect: Fx.hitFlameSmall,
+    shootEffect: Fx.shootSmallFlame/*extend(Effect)*/,
     despawnEffect: Fx.none,
     keepVelocity: false,
-    hittable: false
+    hittable: false,
+    collidesTiles: false,
 });
 
 const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
@@ -40,6 +40,7 @@ const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   rotate: true,
   reload: 10,
   shootY: 5,
+  shootSound: Sound.flame,
   bullet: flameSpew
 });
 
@@ -49,6 +50,7 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   rotate: true,
   reload: 10,
   shootY: 5,
+  shootSound: Sound.flame,
   bullet: flameSpew
 });
 
