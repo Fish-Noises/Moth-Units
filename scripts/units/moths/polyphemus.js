@@ -19,9 +19,7 @@ updateUnit(){
         firingDuration = 0;
     } 
 }*/
-const flameSpew = extend(BulletType, {
-    speed: 3,
-    damage: 18,
+const flameSpew = extend(BulletType(3,18), {
     hitSize: 11,
     lifetime: 13,
     pierce: true,
@@ -52,7 +50,6 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
 });
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
-  top: true,
   x: 13,
   y: -3,
   shooty: 5,
