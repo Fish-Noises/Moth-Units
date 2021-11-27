@@ -19,7 +19,9 @@ updateUnit(){
         firingDuration = 0;
     } 
 }*/
-/*const flameSpew = extend(BulletType(3,25), {
+/*const flameSpew = extend(BulletType, {
+    speed: 3,
+    damage: 25,
     hitSize: 11,
     lifetime: 13,
     pierce: true,
@@ -61,7 +63,7 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  //bullet: modBullets.newPrismBeam(30,210,600)
+  bullet: modBullets.newPrismBeam(30,210,600)
 });
 
 MothAirT4.weapons.addAll(cinderCannon1,cinderCannon2,overloadRay);
