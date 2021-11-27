@@ -29,7 +29,7 @@ const flameSpew = extend(BulletType, {
     statusDuration: 120,
     shootEffect: Fx.shootSmallFlame,
     hitEffect: Fx.hitFlameSmall,
-    despawnEffect: none,
+    despawnEffect: Fx.none,
     keepVelocity: false,
     hittable: false
 });
