@@ -48,7 +48,7 @@ const script = [
   },
   {
     name: "loader",
-    childs: ["unitLoader"] //load after everything, make sure it exists.
+    childs: ["techtree","unitLoader"] //load after everything, make sure it exists.
   }
 ];
 
