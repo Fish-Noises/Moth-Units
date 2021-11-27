@@ -35,26 +35,26 @@ const flameSpew = extend(BulletType, {
 });
 
 const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
-  x: 9,
-  y: 17,
-  rotate: true,
-  reload: 10,
-  shootY: 5,
-  //bullet: flameSpew
-});
-
-const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
-  x: 20,
+  x: 6,
   y: 14,
   rotate: true,
   reload: 10,
   shootY: 5,
-  //bullet: flameSpew
+  bullet: flameSpew
+});
+
+const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
+  x: 23,
+  y: 16,
+  rotate: true,
+  reload: 10,
+  shootY: 5,
+  bullet: flameSpew
 });
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   x: 13,
-  y: -3,
+  y: -5,
   shooty: 5,
   rotate: true,
   reload: 600,
