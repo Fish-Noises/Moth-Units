@@ -20,6 +20,7 @@ updateUnit(){
     } 
 }*/
 const flameSpew = extend(BulletType, {
+    speed: 3,
     damage: 18,
     hitSize: 11,
     lifetime: 13,
