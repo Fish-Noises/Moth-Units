@@ -19,17 +19,18 @@ updateUnit(){
         firingDuration = 0;
     } 
 }*/
-const flameSpew = extend(BulletType(3,18), {
+/*const flameSpew = extend(BulletType(3,25), {
     hitSize: 11,
     lifetime: 13,
     pierce: true,
     status: StatusEffects.burning,
+    statusDuration: 120,
     shootEffect: Fx.shootSmallFlame,
     hitEffect: Fx.hitFlameSmall,
     despawnEffect: none,
     keepVelocity: false,
     hittable: false
-});
+});*/
 
 const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   x: 9,
@@ -37,7 +38,7 @@ const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   rotate: true,
   reload: 10,
   shootY: 5,
-  bullet: flameSpew
+  //bullet: flameSpew
 });
 
 const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
@@ -46,7 +47,7 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   rotate: true,
   reload: 10,
   shootY: 5,
-  bullet: flameSpew
+  //bullet: flameSpew
 });
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
@@ -60,7 +61,7 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: modBullets.newPrismBeam(30,210,600)
+  //bullet: modBullets.newPrismBeam(30,210,600)
 });
 
 MothAirT4.weapons.addAll(cinderCannon1,cinderCannon2,overloadRay);
