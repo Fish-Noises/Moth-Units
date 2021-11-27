@@ -19,7 +19,7 @@ updateUnit(){
         firingDuration = 0;
     } 
 }*/
-/*const flameSpew = extend(BulletType, {
+const flameSpew = extend(BulletType, {
     speed: 3,
     damage: 25,
     hitSize: 11,
@@ -32,7 +32,7 @@ updateUnit(){
     despawnEffect: none,
     keepVelocity: false,
     hittable: false
-});*/
+});
 
 const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   x: 9,
