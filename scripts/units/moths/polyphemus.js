@@ -1,4 +1,4 @@
-const bullets = require("libs/bullets");
+const modBullets = require("libs/bullets");
 
 let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
@@ -30,7 +30,7 @@ const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   hitSize: 10,
   pierce: false,
   lifetime: 16,
-  shootEffect:shootSmallFlame,
+  shootEffect: shootSmallFlame,
   hitEffect: hitFlameSmall,
   damage: 20,
   bullet: BulletType(4.1,35)
@@ -62,8 +62,8 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   continuous: true,
   alternate: false,
   shootStatusDuration: 600,
-  shootStatus: StatusEffects.unmoving,
-  bullet: bullets.newPrismBeam(30,210,600)
+  shootStatus: unmoving,
+  bullet: modBullets.newPrismBeam(30,210,600)
 });
 
 MothAirT4.weapons.addAll(cinderCannon1,cinderCannon2,overloadRay);
