@@ -5,7 +5,7 @@ speed: 1.9
 accel: 0.06
 drag: 0.012
 flying: true
-hitsize: 18
+hitsize: 27
 lowAltitude: true
 engineSize: 2.5
 buildSpeed: 0.9
