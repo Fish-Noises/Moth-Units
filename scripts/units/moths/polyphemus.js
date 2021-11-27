@@ -19,7 +19,18 @@ updateUnit(){
         firingDuration = 0;
     } 
 }*/
-
+const flameSpew = extend(BulletType, {
+    damage: 18,
+    hitSize: 11,
+    lifetime: 13,
+    pierce: true,
+    status: StatusEffects.burning,
+    shootEffect: Fx.shootSmallFlame,
+    hitEffect: Fx.hitFlameSmall,
+    despawnEffect: none,
+    keepVelocity: false,
+    hittable: false
+});
 
 const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   x: 9,
@@ -27,13 +38,7 @@ const cinderCannon1 = extend(Weapon, "moth-units-cinder-cannon", {
   rotate: true,
   reload: 10,
   shootY: 5,
-  hitSize: 10,
-  pierce: false,
-  lifetime: 16,
-  shootEffect: shootSmallFlame,
-  hitEffect: hitFlameSmall,
-  damage: 20,
-  bullet: BulletType(4.1,35)
+  bullet: flameSpew
 });
 
 const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
@@ -42,13 +47,7 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   rotate: true,
   reload: 10,
   shootY: 5,
-  hitSize: 10,
-  pierce: false,
-  lifetime: 16,
-  shootEffect: shootSmallFlame,
-  hitEffect: hitFlameSmall,
-  damage: 20,
-  bullet: BulletType(4.1,35)
+  bullet: flameSpew
 });
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
@@ -62,7 +61,7 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   continuous: true,
   alternate: false,
   shootStatusDuration: 600,
-  shootStatus: unmoving,
+  shootStatus: StatusEffects.unmoving,
   bullet: modBullets.newPrismBeam(30,210,600)
 });
 
