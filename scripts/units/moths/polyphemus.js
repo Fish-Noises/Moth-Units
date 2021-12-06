@@ -3,6 +3,7 @@ const modBullets = require("libs/bullets");
 let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {});
+let i = 0;
 const flameSpew = extend(BulletType, {
     speed: 8,
     damage: 40,
@@ -49,7 +50,13 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: modBullets.newPrismBeam(80,210,600)
+  bullet: modBullets.newPrismBeam(80,210,600),
+  updateWeapon(){
+    if(timer(0, 500) && i < 20){
+        bullet.damage = bullet.damage + 10;
+        i++;
+    }
+  }
 });
 
 MothAirT4.weapons.addAll(cinderCannon1,cinderCannon2,overloadRay);
