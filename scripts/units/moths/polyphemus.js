@@ -39,6 +39,7 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
 });
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
+  let i = 0,
   x: 13,
   y: -5,
   shooty: 5,
@@ -50,7 +51,6 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
   bullet: modBullets.newPrismBeam(80,210,600),
-  let i = 0,
   updateWeapon(){
     if(timer(0, 500) && i < 20){
         bullet.damage = bullet.damage + 10;
