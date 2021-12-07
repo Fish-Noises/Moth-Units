@@ -6,6 +6,9 @@ module.exports = {
         if(other instanceof Healthc){
           let t = other;
           t.damage(this.damage);
+          this.damage += 1;
+        }else{
+          this.damage = selfDamage;
         }
         if(!this.pierce){
           this.remove();
@@ -26,7 +29,7 @@ module.exports = {
 
             hit.collision(b, hit.x, hit.y);
             b.collision(hit, hit.x, hit.y);
-            this.damage += 1;
+            
           }
         }else if(target instanceof Building){
           if(b.timer.get(1, 5)){
@@ -35,12 +38,10 @@ module.exports = {
             if(tile.collide(b)){
               tile.collision(b);
               this.hit(b, tile.x, tile.y);
-              this.damage += 1;
             }
           }
         }else{
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
-          this.damage = selfDamage;
         }
       },
       range(){
