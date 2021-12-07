@@ -40,6 +40,7 @@ module.exports = {
           }
         }else{
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
+          this.damage = selfDamage;
         }
       },
       range(){
