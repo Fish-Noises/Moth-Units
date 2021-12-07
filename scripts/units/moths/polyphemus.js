@@ -5,7 +5,7 @@ let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {});
 const flameSpew = extend(BulletType, {
-    speed: 8,
+    speed: 3,
     damage: 40,
     hitSize: 11,
     lifetime: 13,
