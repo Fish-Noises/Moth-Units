@@ -52,8 +52,8 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
   bullet: modBullets.newPrismBeam(80,210,600),
-  updateWeapon(){
-    this.super$updateWeapon();
+  updateWeapons(){
+    this.super$updateWeapons();
     if(timer(0, 500) && i < 20){
         this.bullet.damage += 10;
         i++;
