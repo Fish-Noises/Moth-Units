@@ -26,7 +26,7 @@ module.exports = {
 
             hit.collision(b, hit.x, hit.y);
             b.collision(hit, hit.x, hit.y);
-            this.damage += 10;
+            this.damage += 1;
           }
         }else if(target instanceof Building){
           if(b.timer.get(1, 5)){
@@ -35,7 +35,7 @@ module.exports = {
             if(tile.collide(b)){
               tile.collision(b);
               this.hit(b, tile.x, tile.y);
-              this.damage += 10;
+              this.damage += 1;
             }
           }
         }else{
