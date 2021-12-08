@@ -40,7 +40,7 @@ module.exports = {
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
         }
         if(target instanceof Hitboxc || target instanceof Building){
-            if(timer(0, 500)){
+            if(b.timer.get(0, 500)){
               this.damage += 10;
           }
         }else{
