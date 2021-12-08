@@ -26,7 +26,6 @@ module.exports = {
 
             hit.collision(b, hit.x, hit.y);
             b.collision(hit, hit.x, hit.y);
-            this.damage += 5;
           }
         }else if(target instanceof Building){
           if(b.timer.get(1, 5)){
@@ -35,12 +34,17 @@ module.exports = {
             if(tile.collide(b)){
               tile.collision(b);
               this.hit(b, tile.x, tile.y);
-              this.damage += 5;
             }
           }
         }else{
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
-          this.damage = selfDamage;
+        }
+        if(target instanceof Hitboxc || target instanceof Building){
+            if(timer(0, 500)){
+              this.damage += 10;
+          }
+        }else{
+            this.damage = selfDamage;
         }
       },
       range(){
