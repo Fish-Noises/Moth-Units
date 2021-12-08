@@ -6,7 +6,7 @@ module.exports = {
         if(other instanceof Healthc){
           let t = other;
           t.damage(this.damage);
-          this.damage += 1;
+          this.damage += 5;
         }else{
           this.damage = selfDamage;
         }
