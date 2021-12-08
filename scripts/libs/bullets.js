@@ -6,8 +6,6 @@ module.exports = {
         if(other instanceof Healthc){
           let t = other;
           t.damage(this.damage);
-        }else{
-          this.damage = selfDamage;
         }
         if(!this.pierce){
           this.remove();
@@ -42,6 +40,7 @@ module.exports = {
           }
         }else{
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
+          this.damage = selfDamage;
         }
       },
       range(){
