@@ -45,13 +45,13 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   y: -5,
   shooty: 5,
   rotate: true,
-  reload: 600,
+  reload: 300,
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: modBullets.newPrismBeam(5,210,600),
+  bullet: modBullets.newPrismBeam(15,210,480),
   /*updateWeapons(){
     this.super$updateWeapons();
     if(timer(0, 500) && i < 20){
