@@ -6,7 +6,6 @@ module.exports = {
         if(other instanceof Healthc){
           let t = other;
           t.damage(this.damage);
-          this.damage += 15;
         }else{
           this.damage = selfDamage;
         }
@@ -29,7 +28,7 @@ module.exports = {
 
             hit.collision(b, hit.x, hit.y);
             b.collision(hit, hit.x, hit.y);
-            
+            this.damage += 5;
           }
         }else if(target instanceof Building){
           if(b.timer.get(1, 5)){
@@ -38,6 +37,7 @@ module.exports = {
             if(tile.collide(b)){
               tile.collision(b);
               this.hit(b, tile.x, tile.y);
+              this.damage += 5;
             }
           }
         }else{
