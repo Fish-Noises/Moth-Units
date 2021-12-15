@@ -6,6 +6,10 @@ module.exports = {
         if(other instanceof Healthc){
           let t = other;
           t.damage(this.damage);
+          if(b.timer.get(0, 5)){
+            this.damage += 30;
+          }
+        }
         }else{
           this.damage = selfDamage;
         }
@@ -41,13 +45,6 @@ module.exports = {
           }
         }else{
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
-        }
-        if(b.timer.get(0, 5)){
-          if(target instanceof Hitboxc || target instanceof Building){
-            this.damage += 30;
-          }else{
-            this.damage = selfDamage;
-          }
         }
       },
       range(){
