@@ -8,7 +8,6 @@ module.exports = {
           t.damage(this.damage)
         }
         if(!this.pierce){
-          this.damage = selfDamage;
           this.remove();
         }else{
           this.collided.add(other.id());
