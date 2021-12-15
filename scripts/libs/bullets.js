@@ -5,10 +5,7 @@ module.exports = {
         this.hit(this.base(), x, y);
         if(other instanceof Healthc){
           let t = other;
-          t.damage(this.damage);
-          if(timer.get(0, 500)){
-            this.damage += 30;
-          }
+          t.damage(this.damage)
         }
         if(!this.pierce){
           this.damage = selfDamage;
