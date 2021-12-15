@@ -6,8 +6,11 @@ module.exports = {
         if(other instanceof Healthc){
           let t = other;
           t.damage(this.damage);
+        }else{
+          this.damage = selfDamage;
         }
         if(!this.pierce){
+          this.damage = selfDamage;
           this.remove();
         }else{
           this.collided.add(other.id());
@@ -41,7 +44,7 @@ module.exports = {
         }
         if(b.timer.get(0, 5)){
           if(target instanceof Hitboxc || target instanceof Building){
-            this.damage += 5;
+            this.damage += 30;
           }else{
             this.damage = selfDamage;
           }
