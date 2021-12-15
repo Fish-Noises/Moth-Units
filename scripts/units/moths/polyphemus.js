@@ -40,6 +40,12 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
 });
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
+  updateWeapons(){
+    this.super$updateWeapons();
+    if(timer(0, 500)){
+        this.bullet.damage += 10;
+    }
+  },
   currentDamage: 80,
   x: 13,
   y: -5,
@@ -52,13 +58,7 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
   bullet: modBullets.newPrismBeam(15,210,480),
-  /*updateWeapons(){
-    this.super$updateWeapons();
-    if(timer(0, 500) && i < 20){
-        this.bullet.damage += 10;
-        i++;
-    }
-  }*/
+  
 });
 
 MothAirT4.weapons.addAll(cinderCannon1,cinderCannon2,overloadRay);
