@@ -41,7 +41,7 @@ module.exports = {
         }
         if(target instanceof Hitboxc || target instanceof Building){
             if(b.timer.get(0, 10)){
-              this.damage += 10;
+              this.damage += 500;
           }
         }else{
             this.damage = selfDamage;
