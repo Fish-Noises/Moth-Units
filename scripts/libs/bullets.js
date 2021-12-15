@@ -9,8 +9,6 @@ module.exports = {
           if(timer.get(0, 500)){
             this.damage += 30;
           }
-        }else{
-          this.damage = selfDamage;
         }
         if(!this.pierce){
           this.damage = selfDamage;
