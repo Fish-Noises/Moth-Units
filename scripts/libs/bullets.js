@@ -21,14 +21,14 @@ module.exports = {
         b.data = target;
         
         if(target instanceof Hitboxc){
-          if(b.timer.get(1, 5)){
+          if(b.timer.get(1, 10)){
             let hit = target;
 
             hit.collision(b, hit.x, hit.y);
             b.collision(hit, hit.x, hit.y);
           }
         }else if(target instanceof Building){
-          if(b.timer.get(1, 5)){
+          if(b.timer.get(1, 10)){
             let tile = target;
 
             if(tile.collide(b)){
@@ -39,12 +39,12 @@ module.exports = {
         }else{
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
         }
-        if(target instanceof Hitboxc || target instanceof Building){
-            if(b.timer.get(0, 10)){
-              this.damage += 500;
-          }
-        }else{
+        if(b.timer.get(0, 5)){
+          if(target instanceof Hitboxc || target instanceof Building){
+            this.damage += 5;
+          }else{
             this.damage = selfDamage;
+          }
         }
       },
       range(){
