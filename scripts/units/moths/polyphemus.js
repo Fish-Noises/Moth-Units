@@ -42,7 +42,7 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   updateWeapons(){
     this.super$updateWeapons();
-    this.bullet.damage += 1;
+    this.bullet.damage += 100;
     /*if(isShooting()){
         if(timer(0, 10)){
             
