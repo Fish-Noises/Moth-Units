@@ -43,12 +43,12 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   updateWeapons(){
     this.super$updateWeapons();
     this.bullet.damage += 100;
+    this.bullet.width += 0.2;
     /*if(isShooting()){
         if(timer(0, 10)){
             
         }}*/
   },
-  currentDamage: 80,
   x: 13,
   y: -5,
   shooty: 5,
