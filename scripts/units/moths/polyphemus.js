@@ -5,10 +5,8 @@ const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {
     update(){
         this.super$update();
-        if(isShooting()){
-            this.weapons.overloadRay.bullet.damage += 100;
-            this.weapons.overloadRay.bullet.width += 0.2;
-        }
+        this.weapons.overloadRay.bullet.damage += 100;
+        this.weapons.overloadRay.bullet.width += 0.2;
   }
 });
 /*let i = 1;*/
