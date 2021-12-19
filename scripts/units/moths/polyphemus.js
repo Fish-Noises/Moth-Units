@@ -43,8 +43,8 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   bullet: flameSpew
 });
 
-const overloadBeam = extend(modBullets.newPrismBeam(40,210,480),{
-    update: function(b){
+const overloadBeam = modBullets.newPrismBeam(40,210,480)
+overloadBeam.update: function(b){
         if(!b) return;
         this.super$update(b);
 
