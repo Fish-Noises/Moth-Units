@@ -54,8 +54,20 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: extend(modBullets.newPrismBeam(40,210,480),{
-    update: function(b){
+  bullet: extend(BulletType, {
+      collision(other, x, y){
+        this.hit(this.base(), x, y);
+        if(other instanceof Healthc){
+          let t = other;
+          t.damage(this.damage)
+        }
+        if(!this.pierce){
+          this.remove();
+        }else{
+          this.collided.add(other.id());
+        }
+      },
+      update(b){
         if(!b) return;
         this.super$update(b);
         
@@ -68,7 +80,6 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
 
             hit.collision(b, hit.x, hit.y);
             b.collision(hit, hit.x, hit.y);
-            this.damage += 2;
           }
         }else if(target instanceof Building){
           if(b.timer.get(1, 10)){
@@ -77,14 +88,61 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
             if(tile.collide(b)){
               tile.collision(b);
               this.hit(b, tile.x, tile.y);
-              this.damage += 2;
             }
           }
         }else{
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
         }
-    }
-  })
+      },
+      range(){
+        return this.length;
+      },
+      draw(b){
+        if(b.data instanceof Position){
+          let data = b.data;
+          Tmp.v1.set(data);
+          
+          let fin = Mathf.curve(b.fin(), 0, this.growTime / b.lifetime);
+          let fout = 1 - Mathf.curve(b.fin(), (b.lifetime - this.fadeTime) / b.lifetime, 1);
+          let lWidth = fin * fout * this.width;
+          
+          let widthScls = [1.8, 1];
+
+          for(let i = 0; i < 2; i++){
+            Draw.color(this.colors[i])
+            Lines.stroke(lWidth * widthScls[i]);
+            Lines.line(b.x, b.y, Tmp.v1.x, Tmp.v1.y, false);
+            Fill.circle(b.x, b.y, Lines.getStroke() / 1.25);
+            Fill.circle(Tmp.v1.x, Tmp.v1.y, Lines.getStroke() / 1.25);
+            Draw.reset();
+          }
+
+          Drawf.light(Team.derelict, b.x, b.y, Tmp.v1.x, Tmp.v1.y, 15 * fin * fout + 5, this.colors[1], 0.6);
+        }
+      },
+      speed: 0.0001,
+      damage: 40, // * 12 = dps
+      colors: [Color.valueOf("bf8af4"), Color.white],
+      width: 1.5,
+      maxRange: 160,
+      length: 240,
+      lifetime: 480,
+      absorbable: false,
+      collidesTiles: true,
+      collidesGround: true,
+      hittable: false,
+      keepVelocity: false,
+      pierce: true,
+      status: StatusEffects.sapped,
+      statusDuration: 180,
+      hitSize: 0,
+      fadeTime: 10,
+      growTime: 10,
+      smokeEffect: Fx.none,
+      shootEffect: Fx.none,
+      hitEffect: Fx.none,
+      despawnEffect: Fx.none
+    });
 });
 /*update(){
         this.super$update();
