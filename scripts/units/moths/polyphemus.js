@@ -5,8 +5,6 @@ const MothAirT4 = extend(UnitType, "polyphemus",{});
 MothAirT4.constructor = () => extend(UnitEntity, {
     update(){
         this.super$update();
-        this.weapons.overloadRay.bullet.damage += 100;
-        this.weapons.overloadRay.bullet.width += 0.2;
   }
 });
 /*let i = 1;*/
@@ -56,7 +54,37 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   alternate: false,
   shootStatusDuration: 600,
   shootStatus: StatusEffects.unmoving,
-  bullet: modBullets.newPrismBeam(40,210,480),
+  bullet: extend(modBullets.newPrismBeam(40,210,480),{
+    update: function(b){
+        if(!b) return;
+        this.super$update(b);
+        
+        let target = Damage.linecast(b, b.x, b.y, b.rotation(), this.length);
+        b.data = target;
+        
+        if(target instanceof Hitboxc){
+          if(b.timer.get(1, 10)){
+            let hit = target;
+
+            hit.collision(b, hit.x, hit.y);
+            b.collision(hit, hit.x, hit.y);
+            this.damage += 2;
+          }
+        }else if(target instanceof Building){
+          if(b.timer.get(1, 10)){
+            let tile = target;
+
+            if(tile.collide(b)){
+              tile.collision(b);
+              this.hit(b, tile.x, tile.y);
+              this.damage += 2;
+            }
+          }
+        }else{
+          b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
+        }
+    }
+  })
 });
 /*update(){
         this.super$update();
