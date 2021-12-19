@@ -4,7 +4,7 @@ let col = Color.valueOf("#bf8af4");
 /*let i = 1;*/
 MothAirT4.constructor = () => extend(UnitEntity, {});
 const MothAirT4 = extend(UnitType, "polyphemus",{
-    update{
+    update(){
         this.super$update();
         if(isShooting()){
             this.overloadRay.bullet.damage += 100;
