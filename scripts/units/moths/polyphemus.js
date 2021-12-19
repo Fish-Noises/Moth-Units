@@ -43,19 +43,8 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   bullet: flameSpew
 });
 
-const overloadRay = extend(Weapon, "moth-units-overload-ray", {
-  x: 13,
-  y: -5,
-  shooty: 5,
-  rotate: true,
-  reload: 300,
-  shootSound: Sounds.tractorbeam,
-  continuous: true,
-  alternate: false,
-  shootStatusDuration: 600,
-  shootStatus: StatusEffects.unmoving,
-  bullet: modBullets.newPrismBeam(40,210,480)
-  bullet.update(b): function(b){
+const overloadBeam = extend(modBullets.newPrismBeam(40,210,480),{
+    update: function(b){
         if(!b) return;
         this.super$update(b);
 
@@ -84,7 +73,20 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
           b.data = new Vec2().trns(b.rotation(), this.length).add(b.x, b.y);
         }
     }
-  })
+  })});
+
+const overloadRay = extend(Weapon, "moth-units-overload-ray", {
+  x: 13,
+  y: -5,
+  shooty: 5,
+  rotate: true,
+  reload: 300,
+  shootSound: Sounds.tractorbeam,
+  continuous: true,
+  alternate: false,
+  shootStatusDuration: 600,
+  shootStatus: StatusEffects.unmoving,
+  bullet: overloadBeam
 });
 /*update(){
         this.super$update();
