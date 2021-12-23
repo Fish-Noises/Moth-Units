@@ -50,7 +50,6 @@ const overloadBeam = extend(BulletType, {
         if(other instanceof Healthc){
               let t = other;
               t.damage(this.damage)
-              this.damage += 100;
         }
         if(!this.pierce){
               this.remove();
@@ -64,6 +63,7 @@ const overloadBeam = extend(BulletType, {
 
     let target = Damage.linecast(b, b.x, b.y, b.rotation(), this.length);
     b.data = target;
+    this.damage += 100;
 
     if(target instanceof Hitboxc){
       if(b.timer.get(1, 10)){
@@ -145,7 +145,7 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
-  shootStatusDuration: 600,
+  shootStatusDuration: 480,
   shootStatus: StatusEffects.unmoving,
   bullet: overloadBeam
 });
