@@ -49,6 +49,7 @@ const overloadBeam = extend(BulletType, {
         if(other instanceof Healthc){
               let t = other;
               t.damage(this.damage)
+              this.damage += 1;
         }
         if(!this.pierce){
               this.remove();
