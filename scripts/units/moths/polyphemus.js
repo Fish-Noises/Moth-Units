@@ -10,7 +10,7 @@ const MothAirT4 = extend(UnitType, "polyphemus",{});
 });*/
 /*Will figure out damage ramping later, t5 takes priority*/
 /*let i = 1;*/
-const flameSpew = extend(BulletType, {
+/*const flameSpew = extend(BulletType, {
     speed: 3,
     damage: 40,
     hitSize: 11,
@@ -18,7 +18,7 @@ const flameSpew = extend(BulletType, {
     pierce: true,
     status: StatusEffects.burning,
     statusDuration: 120,
-    shootEffect: Fx.shootSmallFlame/*extend(Effect)*/,
+    shootEffect: Fx.shootSmallFlame/*extend(Effect),
     despawnEffect: Fx.none,
     keepVelocity: false,
     hittable: false,
@@ -43,16 +43,16 @@ const cinderCannon2 = extend(Weapon, "moth-units-cinder-cannon", {
   shootY: 5,
   shootSound: Sounds.flame,
   bullet: flameSpew
-});
+});*/
 
 const overloadBeam = modBullets.newPrismBeam(140, 210, 360)
 
 const overloadRay = extend(Weapon, "moth-units-overload-ray", {
-  x: 13,
-  y: -5,
-  shooty: 5,
+  x: 19,
+  y: -11.25,
+  shooty: 17,
   rotate: true,
-  reload: 300,
+  reload: 240,
   shootSound: Sounds.tractorbeam,
   continuous: true,
   alternate: false,
@@ -68,4 +68,4 @@ const overloadRay = extend(Weapon, "moth-units-overload-ray", {
         }
   }*/
 
-MothAirT4.weapons.addAll(cinderCannon1,cinderCannon2,overloadRay);
+MothAirT4.weapons.addAll(overloadRay);
