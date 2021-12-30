@@ -2,12 +2,7 @@ const modBullets = require("libs/bullets");
 
 let col = Color.valueOf("#bf8af4");
 const MothAirT4 = extend(UnitType, "polyphemus",{});
-/*MothAirT4.constructor = () => extend(UnitEntity, {
-    update(){
-        this.super$update();
-        this.overloadRay.bullet.damage += 1
-  }
-});*/
+MothAirT4.constructor = () => extend(UnitEntity, {});
 /*Will figure out damage ramping later, t5 takes priority*/
 /*let i = 1;*/
 /*const flameSpew = extend(BulletType, {
