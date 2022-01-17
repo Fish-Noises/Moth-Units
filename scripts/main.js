@@ -42,7 +42,7 @@ const script = [
     childs: [
 			{
 				name: "moths",
-				childs: ["pupa","hawk","luna","polyphemus"]
+				childs: ["pupa","hawk","luna","polyphemus","atlas"]
 			}
   	]
   },

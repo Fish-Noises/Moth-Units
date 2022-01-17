@@ -50,3 +50,10 @@ reconAdd(Blocks.exponentialReconstructor, [
     cunit("polyphemus")
   )
 ]);
+
+reconAdd(Blocks.tetrativeReconstructor, [
+  Seq.with(
+    cunit("polyphemus"),
+    cunit("atlas")
+  )
+]);

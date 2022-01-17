@@ -24,3 +24,4 @@ node(UnitTypes.flare, cunit("pupa"), null, null);
 node(cunit("pupa"), cunit("hawk"), null, new Objectives.Research(Blocks.additiveReconstructor));
 node(cunit("hawk"), cunit("luna"), null, new Objectives.Research(Blocks.multiplicativeReconstructor));
 node(cunit("luna"), cunit("polyphemus"), null, new Objectives.Research(Blocks.exponentialReconstructor));
+node(cunit("luna"), cunit("atlas"), null, new Objectives.Research(Blocks.exponentialReconstructor));

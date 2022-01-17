@@ -1,0 +1,10 @@
+commandLimit: 7
+health: 18000
+armor: 9
+flying: true
+rotateSpeed: 2
+flying: true
+engineOffset: 25
+engineSize: 8.8
+buildSpeed: 1.1
+hitSize: 55
