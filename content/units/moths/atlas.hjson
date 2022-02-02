@@ -2,7 +2,7 @@ commandLimit: 7
 health: 18000
 armor: 9
 flying: true
-rotateSpeed: 2
+rotateSpeed: 0.8
 flying: true
 engineOffset: 25
 engineSize: 8.8

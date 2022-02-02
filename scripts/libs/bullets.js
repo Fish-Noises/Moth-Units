@@ -1,3 +1,4 @@
+//const customStatusEffects = require("statusEffects");
 module.exports = {
   newPrismBeam(selfDamage,selfLength,selfLifetime){
     let prismBeam = extend(BulletType, {
